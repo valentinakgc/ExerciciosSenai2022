@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+    
+    <form>
+        <p>Qual a cor do céu?</p>
+        <div>
+          <input type="radio" id="pergunta1Choice1"
+                 name="pergunta1" value="Azul">
+          <label for="pergunta1Choice1">Azul</label>
+          <input type="radio" id="pergunta1Choice2"
+                 name="pergunta1" value="Verde">
+          <label for="pergunta1Choice2">Verde</label>
+          <input type="radio" id="pergunta1Choice3"
+                 name="pergunta1" value="NDA">
+          <label for="pergunta1Choice3">NDA</label>
+          if
+        </div>
+        <p>Qual praia não é no sul de Floripa?</p>
+        <div>
+          <input type="radio" id="pergunta2Choice1"
+                 name="pergunta2" value="Lagoinha">
+          <label for="pergunta2Choice1">Lagoinha do Leste</label>
+          <input type="radio" id="pergunta2Choice2"
+                 name="pergunta2" value="Campeche">
+          <label for="pergunta2Choice2">Campeche</label>
+          <input type="radio" id="pergunta2Choice3"
+                 name="pergunta2" value="Ponta">
+          <label for="pergunta2Choice3">Ponta das Canas</label>
+        </div>
+        <p>Qual o primeiro planeta do sistema solar?</p>
+        <div>
+          <input type="radio" id="pergunta3Choice1"
+                 name="pergunta3" value="Saturno">
+          <label for="pergunta3Choice1">Saturno</label>
+          <input type="radio" id="pergunta3Choice2"
+                 name="pergunta3" value="Urano">
+          <label for="pergunta3Choice2">Urano</label>
+          <input type="radio" id="pergunta3Choice3"
+                 name="pergunta3" value="Jupter">
+          <label for="pergunta3Choice3">Júpter</label>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+
+      <script>
+        var form = document.querySelector("form");
+        var log = document.querySelector("#log");
+
+    form.addEventListener("submit", function(event) {
+        var data = new FormData(form);
+        var pontos = 0;
+
+        for (const entry of data) {
+           if (entry[1] == "Azul" || entry[1] == "Ponta" || entry[1] == "Jupter" ){
+               pontos++;
+           }
+        };
+        console.log(pontos);
+        event.preventDefault();
+    }, false);
+
+      </script>
+
+</body>
+</html>
