@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    font-family: Verdana;
+}
+
+.container{
+    margin-top: 30px;
+    margin: auto;
+    width: 50%;
+    border: 2px solid #80000b;
+    padding: 30px;
+}
+
+.div-img{
+    margin: auto;
+    width: 53%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #80000b;
+}
+
