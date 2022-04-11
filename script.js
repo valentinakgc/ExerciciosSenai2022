@@ -14,6 +14,12 @@
     botao.addEventListener('click', setVerificar)
 
     function setVerificar(){
+         if (name.value == '') {
+        console.log(name);
+        
+        alert('Preencha o nome!')
+        resultado.innerHTML  = ""
+    } else {
 
         let pontos = 0
         if (q1.value == "1") {
@@ -57,4 +63,6 @@
         }
 
         resultado.innerHTML = "<h3>Resultado</h3><br> Pontos: " + pontos
+    }
+        
     }
