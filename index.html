@@ -1,128 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Quiz Game</title>
-    <link rel="stylesheet" href="./css/estilo.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Consulta de Satisfação do Usuário</title>
+    <link rel="stylesheet" href="./CSS/estilo.css">
 </head>
-
 <body>
-
     <header>
-        <h1>Quiz Game</h1>
+        <h2>Consulta de Satisfação do Usuário</h2>
     </header>
-
-    <div class="div-img">
-        <img src="./img/quizimg2.jpg" width=500 height=250>
-    </div>
-    
-        <div style="text-align:center">
-        <input (value="" placeholder="Escreva seu nome" ) type="text" id="name">
+    <div class="container">
+        <div class="div-title">
+            <h2>Questionário</h2>
         </div>
 
-    <div class="container">
-        <h2>Questões aleatórias!</h2>
-        <label>Qual o primeiro planeta do sistema solar?</label>
-        <select id="q1">
-            <option value="0">Saturno</option>
-            <option value="1">Jupter</option>
-        </select>
+        <div class="div-product">
+            <img src="./img/ovo.png" alt="prduto">
+        </div>
 
-        <br>
-        <br>
-
-        <label>Qual praia não é no sul de Floripa?</label>
-        <select id="q2">
-            <option value="1">Ponta das Canas</option>
-            <option value="0">Campeche</option>
-        </select>
-
-        <br>
-        <br>
-
-        <label>Qual livro é de fantasia?</label>
-        <select id="q3">
-            <option value="1">Harry Potter</option>
-            <option value="0">Os 7 maridos de Evelyn Hugo</option>
-        </select>
-
-        <br>
-        <br>
-
-        <label>Quantas cores tem o arco-íris?</label>
-        <select id="q4">
-            <option value="0">6</option>
-            <option value="1">7</option>
-        </select>
-
-        <br>
-        <br>
-
-        <label>Quantos planetas existem no sistema solar?</label>
-        <select id="q5">
-            <option value="0">7</option>
-            <option value="1">8</option>
-        </select>
-
-        <br>
-        <br>
-
-        <label>Quem pintou o quadro Mona Lisa?</label>
-        <select id="q6">
-            <option value="1">Leonardo Da Vinci</option>
-            <option value="0">Picasso</option>
-        </select>
-
-        <br>
-        <br>
-
-        <label>Quem escreveu Harry Potter?</label>
-        <select id="q7">
-            <option value="0">Holly Black</option>
-            <option value="1">J. K. Rowling</option>
-        </select>
-
-        <br>
-        <br>
-
-        <label>Quantos países possuem o português como língua oficial?</label>
-        <select id="q8">
-            <option value="1">10</option>
-            <option value="0">11</option>
-        </select>
-
-        <br>
-        <br>
-
-        <label>Quanto tempo a Lua demora para dar uma volta ao redor da terra?</label>
-        <select id="q9">
-            <option value="0">29 dias</option>
-            <option value="1">28 dias</option>
-        </select>
-
-        <br>
-        <br>
-
-        <label>A mistura das cores vermelho e branco forma qual cor?</label>
-        <select id="q10">
-            <option value="1">Rosa</option>
-            <option value="0">Roxo</option>
-        </select>
-
+        <div class="div-question">
+            <label>1) Você gostou do produto?</label>
+                <div class="div-options">
+                <label>
+                    <input type="radio" name="q1" id="q1_1"> Muito Satisfeito
+                </label>
+                <label>
+                    <input type="radio" name="q1" id="q1_2"> Satisfeito
+                </label>
+                <label>
+                    <input type="radio" name="q1" id="q1_3"> Neutro
+                </label>
+                <label>
+                    <input type="radio" name="q1" id="q1_4"> Inatisfeito
+                </label>
+                <label>
+                    <input type="radio" name="q1" id="q1_5"> Muito Inatisfeito
+                </label>
+                </div>
+        
+                <div class="div-question">
+                    <div class="div-options">
+                        <button type="button" id="btn-enviar">Enviar</button>
+                    </div>
+                </div>
+        </div>
     </div>
-
-    <div class="container">
-        <button id="verificar">Verificar</button>
-
-        <p id="resultado"></p>
-
-    </div>
-
-    <script src="./js/script.js"></script>
-
+    <footer>
+        <ul>
+            <li>Mercadinho da Vava</li>
+            <li>Rodovia, SC-401, 3730 - Saco Grande, Florianópolis - SC</li>
+            <li>880123-45</li>
+        </ul>
+    </footer>
+    <script src="./JS/script.js"></script>
 </body>
-
 </html>

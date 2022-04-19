@@ -1,24 +1,94 @@
 body{
     margin: 0;
-    font-family: Verdana;
+    font-family: monospace;
+}
+
+header{
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+header h2{
+    color: rgb(23, 196, 196);
+}
+
+footer{
+    background-color: rgb(167, 243, 243);
+    padding: 40px;
+}
+
+footer li{
+    color: rgb(94, 8, 8);
+}
+
+.div-product{
+    margin: auto;
+    width: 20%;
+}
+
+.div-product img{
+    width: 100%;
 }
 
 .container{
-    margin-top: 30px;
     margin: auto;
-    width: 50%;
-    border: 2px solid #eb3506;
-    padding: 30px;
-    background-color:  #b4f3fb;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 70%;
+    padding: 8px;
+    border-radius: 30px;
+    border: 2px solid lightslategrey;
 }
 
-.div-img{
-    margin: auto;
-    width: 53%;
-    text-align: center;
-    margin-top: 10px;
+.div-title{
     margin-bottom: 10px;
-   border: 2px solid #eb3506;
-    background-color:  #b4f3fb;
+    padding: 15px;
+    background-color: lightcoral;
+    border-radius: 30px;
 }
 
+.div-title h2{
+    color: lightslategrey;
+    text-align: center;
+}
+
+.div-question{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.div-options{
+    margin-top: 8px;
+    display: flex;
+    font-size: small;
+    border: 2px solid antiquewhite;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.div-options label{
+    margin-right: 5px;
+}
+
+.div-options button{
+    width: 100%;
+    background-color: palevioletred;
+    color: paleturquoise;
+    border-radius: 25px;
+    border: 2px solid oldlace;
+    cursor: pointer;
+}
+.div-options button:hover{
+    background-color: paleturquoise;
+    color: palevioletred;
+}
+
+@media screen and (max-width: 650px){
+    .div-options{
+        display: block;
+    }
+
+    .div-options label{
+        margin-right: 0px;
+    }
+}
