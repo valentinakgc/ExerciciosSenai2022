@@ -100,3 +100,41 @@ border-radius: 1rem;
 .container button:hover{
     background-color: brown;
 }
+
+.list{
+    width: 100%;
+}
+
+.list table{
+    width: 100%;
+}
+
+.list table th{
+    background-color:rgb(95, 9, 9);
+    padding: 1rem;
+    color: antiquewhite;
+    border-radius: 5px;
+}
+
+.list table td{
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 2px;
+    border: 2px solid brown;
+    border-radius: 5px;
+}
+
+.div-erro{
+    margin: auto;
+    width: 70%;
+    border: 2px solid brown;
+    background-color: rgb(95, 9, 9);
+    color: antiquewhite;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    display: none;
+}
