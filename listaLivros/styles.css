@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+
+.text-aquamarine {
+  color: #7fffd4;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.h-5px {
+  height: 5px;
+}
+
+.w-45 {
+  width: 45%;
+}
+
+.font-weight-light {
+  font-weight: 300;
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+.font-weight-regular {
+  font-weight: 400;
+}
+
+.border-debug {
+  border: 1px solid red;
+}
+
+.w-720px {
+  width: 720px;
+}
+
+.bg-light-green {
+  background-color: #E2FEEF;
+}
+
+.ml-140px {
+  margin-left: 140px;
+}
+
+.mr-140px {
+  margin-right: 140px;
+}
+
+.w-420px {
+  width: 420px;
+}
+
+.btn-green {
+  background: linear-gradient(180deg, #06351C 0%, #042915 100%);
+  color: #FFFFFF;
+}
+
+.btn-green:hover {
+  color: #FFFFFF;
+}
+
+.font-size-3rem {
+  font-size: 3rem;
+}
+
+.font-size-1-5rem {
+  font-size: 1.5rem;
+}
