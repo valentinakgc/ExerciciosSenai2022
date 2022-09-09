@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="icon" href="./img/books.jpg">
+  <title>Lista de Livros</title>
   <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 <link rel="stylesheet" href="styles.css">
@@ -13,8 +14,8 @@
   <nav class="navbar bg-dark text-white d-flex justify-content-around align-items-center ">
     <h3 class="font-playfair font-weight-medium"><span class="text-aquamarine">V</span>alentina's <span class="text-aquamarine">B</span>ook</h3>
     <div>
-      <a href="" class="text-decoration-none text-light mx-2">livros</a>
-      <a href="" class="text-decoration-none text-light mx-2">minha lista</a>
+      <a href="" class="text-decoration-none text-light mx-3">livros</a>
+      <a href="" class="text-decoration-none text-light mx-3">minha lista</a>
     </div>
   </nav>
 
@@ -32,17 +33,45 @@
     <div class="d-flex justify-content-center my-5">
       <!-- Card Esquerda -->
       <div class="d-flex bg-light-green w-720px py-4 align-items-center">
-        <img class="bg-dark ml-140px mw-160px" src="./img/tog.png">
+        <img class="bg-dark mx-3 ml-140px hw-160px" src="./img/tog.png">
         <div class="d-flex flex-column w-420px">
           <h2 class="mx-5 font-weight-light">Throne of Glass</h2>
           <div class="d-flex justify-content-end">
-            <button class="d-inline mx-5 btn btn-green">ver mais</button>
+            <button type="button" class="d-inline mx-5 btn btn-green" 
+            data-bs-toggle="modal" data-bs-target="#exampleModal">ver mais</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Throne of Glass</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Nas sombrias e sujas minas de sal de Endovier, um jovem de 18 anos está cumprindo sua sentença. 
+                    Celaena é uma assassina, e a melhor de Adarlan. Aprisionada e fraca, ela está quase perdendo as 
+                    esperanças quando recebe uma proposta. Terá de volta sua liberdade se representar o príncipe de 
+                    Adarlan em uma competição, lutando contra os mais habilidosos assassinos e larápios do reino. 
+                    Endovier é uma sentença de morte, e cada duelo em Adarlan será para viver ou morrer. 
+                    Mas se o preço é ser livre, ela está disposta a tudo. Mas algo maligno habita o castelo — e está
+                    ali para matar. Quando os demais competidores começam a morrer, um a um e de maneira horrível, 
+                    Celaena se vê mais uma vez envolvida em uma batalha pela sobrevivência e inicia uma jornada
+                    desdesperada para desvendar a origem daquele mal antes que ele destrua o mundo dela. E sua 
+                    única chance de ser livre. "O mundo sera salvo e refeito pelos sonhadores"
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      
       <!-- Card Direita -->
       <div class="d-flex bg-light w-720px py-4 align-items-center">
-        <img class="bg-dark ml-140px mw-160px" src="./img/acotar.jpeg">
+        <img class="bg-dark mx-3 ml-140px hw-160px" src="./img/acotar.jpeg">
         <div class="d-flex flex-column mr-140px w-420px">
           <h2 class="mx-5 font-weight-light">A Court of Thorns and Roses</h2>
           <div class="d-flex justify-content-end">
@@ -56,17 +85,19 @@
     <div class="d-flex justify-content-center">
       <!-- Card Esquerda -->
       <div class="d-flex bg-light w-720px py-4 align-items-center">
-        <img class="bg-dark ml-140px mw-160px" src="./img/CC.jpeg">
-        <div class="d-flex flex-column w-420px">
+        <img class="bg-dark mx-3 ml-140px hw-160px" src="./img/CC.jpeg">
+        <div class="border-debug h-100 d-flex align-self-end w-420px">
+          <div class="h-100 w-75">
           <h2 class="mx-5 font-weight-light">Crescent City</h2>
-          <div class="d-flex justify-content-end">
-            <button class="d-inline mx-5 btn btn-green">ver mais</button>
+        </div>
+          <div class="d-flex justify-content-end h-25">
+            <button class="d-inline ml-5 btn btn-green">ver mais</button>
           </div>
         </div>
       </div>
       <!-- Card Direita -->
       <div class="d-flex bg-light-green w-720px py-4 align-items-center">
-        <div style="width: 160px; height: 160px;" class="bg-dark mx-3" ></div>
+        <img class="bg-dark mx-3 ml-140px hw-160px" src="./img/CC2.png">
         <div class="d-flex flex-column mr-140px w-420px">
           <h2 class="mx-5 font-weight-light">House of Sky<br>and Breath</h2>
           <div class="d-flex justify-content-end">
@@ -80,17 +111,40 @@
     <div class="d-flex justify-content-center my-5">
       <!-- Card Esquerda -->
       <div class="d-flex bg-light-green w-720px py-4 align-items-center">
-        <img class="bg-dark ml-140px mw-160px" src="./img/tcp.jpeg">
+        <img class="bg-dark mx-3 ml-140px hw-160px" src="./img/tcp.jpeg">
         <div class="d-flex flex-column w-420px">
           <h2 class="mx-5 font-weight-light">The Cruel Price</h2>
           <div class="d-flex justify-content-end">
-            <button class="d-inline mx-5 btn btn-green">ver mais</button>
+            <!-- Button trigger modal -->
+<button type="button" class="d-inline mx-5 btn btn-green" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  ver mais
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">The Cruel Price</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
           </div>
         </div>
       </div>
+
       <!-- Card Direita -->
       <div class="d-flex bg-light w-720px py-4 align-items-center">
-        <img class="bg-dark ml-140px mw-160px" src="./img/fba.webp">
+        <img class="bg-dark mx-3 ml-140px hw-160px" src="./img/fba.webp">
         <div class="d-flex flex-column mr-140px w-420px">
           <h2 class="mx-5 font-weight-light">From Blood<br>and Ash</h2>
           <div class="d-flex justify-content-end">
@@ -104,9 +158,9 @@
     <div class="d-flex justify-content-center">
       <!-- Card Esquerda -->
       <div class="d-flex bg-light w-720px py-4 align-items-center">
-        <img class="bg-dark ml-140px mw-160px" src="./img/duplo.jpeg">
+        <img class="bg-dark mx-3 ml-140px hw-160px" src="./img/duplo.jpeg">
         <div class="d-flex flex-column w-420px">
-          <h2 class="mx-5 font-weight-light">Throne of Glass
+          <h2 class="border-debug mx-5 font-weight-light">Throne of Glass
             & A Court of Thorns<br>and Roses</h2>
           <div class="d-flex justify-content-end">
             <button class="d-inline mx-5 btn btn-green">ver mais</button>
@@ -125,6 +179,70 @@
       </div>
     </div>
   </div>
+
+  <footer class="bg-gray text-white text-center text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Footer Content</h5>
+  
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+            voluptatem veniam, est atque cumque eum delectus sint!
+          </p>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+  
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  </footer>
 
   <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
