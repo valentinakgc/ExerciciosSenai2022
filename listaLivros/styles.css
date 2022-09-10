@@ -48,6 +48,14 @@
   background-color: #06351C;
 }
 
+.ml-50px {
+  margin-left: 50px;
+}
+
+.pl-50px{
+  padding-left: 50px;
+}
+
 .ml-140px {
   margin-left: 140px;
 }
@@ -67,6 +75,10 @@
 
 .btn-green:hover {
   color: #FFFFFF;
+}
+
+.font-italic {
+  font-style: italic;
 }
 
 .font-size-3rem {
