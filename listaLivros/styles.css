@@ -20,6 +20,10 @@
   width: 45%;
 }
 
+.w-35 {
+  width: 35%;
+}
+
 .font-weight-light {
   font-weight: 300;
 }
@@ -92,4 +96,8 @@
 .hw-160px {
   width: 160px; 
   height: 160px;
+}
+
+.filter-invert {
+  filter: invert(100%);
 }
