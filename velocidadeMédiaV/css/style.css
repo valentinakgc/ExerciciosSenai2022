@@ -5,12 +5,12 @@ h4 {
 }
 
 .calculo {
-    margin-top: 40px;
     border: 3px solid rgb(221, 102, 47);
     padding: 10px;
-    margin-left: 30rem;
-    margin-right: 30rem;
+    margin: auto;
+    width: 1000px;
     border-radius: 15px;
+    margin-top: 40px;
 }
 
 .calculo header {
@@ -20,7 +20,6 @@ h4 {
     margin-top: 10px;
     border-radius: 3px;
     color: rgb(221, 102, 47);
-   
 }
 
 .calculo p {
@@ -34,13 +33,51 @@ h4 {
     padding: 5px;
     margin-block-end: 10px;
 }
+.input {
+    border: 2px solid rgb(221, 102, 47);
+    border-radius: 15px;
+    width: 100%;
+    padding: 20px;
+    margin-block-end: 10px;
+    background-color: rgb(250, 168, 129);
+}
 
 .calculo button {
     border: 2px solid rgb(221, 102, 47);
     border-radius: 10px;
-    background-color: rgb(250, 168, 129);;
+    background-color: rgb(250, 168, 129);
     padding: 8px;
     color: rgb(221, 102, 47);
+    margin-block-end: 10px;
+}
+
+.resultado {
+    border: 3px solid rgb(221, 102, 47);
+    padding: 5px;
+    margin: auto;
+    width: 1000px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.resultado header {
+    background-color: rgb(250, 168, 129);
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    border-radius: 3px;
+    color: rgb(221, 102, 47);
+}
+
+.resultado p {
+    margin-left: 10px;
+}
+
+.historico {
+    border: 2px solid rgb(221, 102, 47);
+    border-radius: 15px;
+    width: 100%;
+    padding: 60px;
     margin-block-end: 10px;
 }
 
@@ -48,5 +85,9 @@ footer {
     background-color: rgb(221, 102, 47);
     color: #ffff;
     height: 10rem;
-    margin-top: 50px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
 }
