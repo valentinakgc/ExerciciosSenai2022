@@ -31,22 +31,31 @@
             <header>
                 <p>Cálculo</p>
             </header>
-            <div class="input">  <input type="number" id="deslocamento" class="deslocamento" placeholder="Informe o valor do deslocamento"> </div>
-
-            <div class="input">  <input type="number" id="tempo" class="tempo" placeholder="Informe o intervalo de tempo"> </div>
-          
+            <div>  <input type="number" id="deslocamento" class="deslocamento" placeholder="Informe o valor do deslocamento"> </div>
+            <div>  <input type="number" id="tempo" class="tempo" placeholder="Informe o intervalo de tempo"> </div>
             <button onclick="limpar()">Limpar</button>
             <button onclick="calcular()">Calcular</button>
-            
-            <div class="input"> <input type="number" readonly id="vm" class="resultado"> </div>
-
+            <div class="input" id="vm"> </div>
          </div>
+
+         <div class="resultado">
+              <header>
+                  <p>Resultado</p>
+              </header>
+              <div class="historico" id="result"> 
+                <ul id="historico"></ul>
+              </div>
+          </div>
 
           <footer>
             <ul>
-                vava
+                SENAI SC <br>
+                Curso de Desenvolvimento de Sistemas <br>
+                Lógica de Programação <br>
+                Valentina Kroth Gil Cardoso
             </ul>
           </footer>
+          <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
