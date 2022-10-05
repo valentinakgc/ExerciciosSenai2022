@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1º Resposta
+
+    //tipo texto
+    var nome = prompt("Digite um texto")
+    console.log(nome)
+
+     //tipo inteiro
+    var numero = parseFloat(prompt("Digite um numero")) 
+    var numero2 = 2
+    var resultado = numero + numero2
+    console.log(resultado)
+      
+    var pi = 3.14       //tipo real
+    var podeSair = true    // tipo booleano (verdadeiro ou falso)
+     
+    //saida
+    
+     
+    </script>
+</body>
+</html>
