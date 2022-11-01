@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    let qtd100 = 0
+    for(let i=1; i<=5 ; i++)
+    {
+      let qtd = parseInt(prompt('Digite a qtd'))
+      let precoUnitario = parseFloat(prompt('Digite o preço unitario'))
+      let custoTotal = qtd*precoUnitario
+      if(custoTotal > 100){
+        qtd100++
+      }
+      console.log('O valor gasto do produto '+i+' eh R$' +custoTotal)
+    }
+    console.log('A quantidade de produtos que custam mais que R$ 100.00 eh '+qtd100)
+</script>
+
+</body>
+</html>
