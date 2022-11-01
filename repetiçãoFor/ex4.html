@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let pcusto, pvenda, tipo, lucro, qtdCalcado=0
+        for(let i=1; i<=5; i++){
+            pcusto = parseFloat(prompt('Digite o preço de custo'))
+            pvenda = parseFloat(prompt('Digite o preço da venda'))
+            tipo = prompt('V – vestuário\nC – Calçado')
+            if(tipo == 'c' || tipo == 'C'){
+                qtdCalcado++
+            }
+
+            lucro = pvenda - pcusto
+            console.log('Lucro: R$'+lucro);
+        }
+        console.log('Qtd de calçados eh '+qtdCalcado)
+
+    </script>
+
+</body>
+</html>
