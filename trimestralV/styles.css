@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+
+.text-aquamarine {
+  color: #7fffd4;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.h-5px {
+  height: 5px;
+}
+
+.w-45 {
+  width: 45%;
+}
+
+.w-35 {
+  width: 35%;
+}
+
+.font-weight-light {
+  font-weight: 300;
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+.font-weight-regular {
+  font-weight: 400;
+}
+
+.border-debug {
+  border: 1px solid red;
+}
+
+.w-720px {
+  width: 720px;
+}
+
+.bg-light-green {
+  background-color: #E2FEEF;
+}
+
+.bg-dark-green {
+  background-color: #06351C;
+}
+
+.ml-50px {
+  margin-left: 50px;
+}
+
+.pl-50px{
+  padding-left: 50px;
+}
+
+.ml-140px {
+  margin-left: 140px;
+}
+
+.mr-140px {
+  margin-right: 140px;
+}
+
+.w-420px {
+  width: 420px;
+}
+
+.btn-blue {
+  background: linear-gradient(180deg, #85D5E7 0%, #5CB0C2 100%);
+  color: #FFFFFF;
+}
+
+.btn-green:hover {
+  color: #FFFFFF;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.font-size-3rem {
+  font-size: 3rem;
+}
+
+.font-size-1-5rem {
+  font-size: 1.5rem;
+}
+
+.hw-160px {
+  width: 160px; 
+  height: 160px;
+}
+
+.filter-invert {
+  filter: invert(100%);
+}
